@@ -63,6 +63,13 @@ const inputCommentaire=document.querySelector("#Commentaire");
 form.addEventListener("submit",function ajouterCommentaire(event){
     //quand je envoi le formulaire il va stopper le rafraichisment de la page
    event.preventDefault();
+    // Si le champ de saisie commentaire vide, avertir utilisateur
+    if (inputCommentaire.value === "") {
+        alert("Commentaire vide !");
+        return; // Stoppe l'événement
+    }
+
+
    //on ajouter des truc sur notre ol de notre documennt on utilise innerHTML
    // si on met comme ca il va modifier la 1er ligne en toto
    // olCommentaires.innerHTML ="toto";

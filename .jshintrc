@@ -32,8 +32,9 @@
   "maxlen": 100,
   // Require capitalized names for constructor functions.
   "newcap": true,
-  // Enforce use of single quotation marks for strings.
-  "quotmark": "single",
+  // Enforce use of single quotation marks for strings(il accepte que les single guimet et les double '').
+//  "quotmark": "single",
+  "quotmark": "double",
   // Enforce placing 'use strict' at the top function scope
   "strict": true,
   // Prohibit use of explicitly undeclared variables.

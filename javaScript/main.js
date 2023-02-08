@@ -17,6 +17,7 @@ if (isNaN(celcius)) {
 }else{
     let fahrenheit=celcius*9/5+32;
 
+
     alert(celcius+" °C "+ " = "+fahrenheit+" °F ");
 
 }

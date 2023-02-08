@@ -1,6 +1,47 @@
 //utiliser cette commande pour que si on a une erreur pour qui le nous previen et s'arrete
 "use strict";
 
+//recupere le prenom du visiteur
+
+const prenom = prompt("quel est ton prénom ?");
+// voir que il ya bien recuperer le prenom
+alert("bienvenue "+prenom);
+// s'assurer que il a bien entrer un nombre
+const celcius = Number(prompt("temperature en celcius :"));
+
+// en met une condition si il entre un string un message d'erreur
+// sinon on procede au traitement
+
+if (isNaN(celcius)) {
+    alert("entrer un nombre pas une chaine de carcatère");
+}else{
+    let fahrenheit=celcius*9/5+32;
+
+    alert(celcius+" °C "+ " = "+fahrenheit+" °F ");
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // alert("bonjour le monde ");
 let nom="reda";
 
@@ -66,7 +107,8 @@ form.addEventListener("submit",function ajouterCommentaire(event){
     // Si le champ de saisie commentaire vide, avertir utilisateur
     if (inputCommentaire.value === "") {
         alert("Commentaire vide !");
-        return; // Stoppe l'événement
+        return; // Stoppe l'événement et quite la fonction grace a "return"
+        // en javascript qui est "exit" en php
     }
 
 
@@ -86,6 +128,8 @@ form.addEventListener("submit",function ajouterCommentaire(event){
     inputCommentaire.focus();
 
 });
+
+
 
 
 
